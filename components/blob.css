@@ -1,0 +1,21 @@
+.svg {
+  position: absolute;
+  animation-name: move;
+  animation-duration: 150s;
+  animation-direction: both;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-20px, 10px);;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: translate(30px, -40px);;
+    transform: rotate(360deg);
+  }
+}

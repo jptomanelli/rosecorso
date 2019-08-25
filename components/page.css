@@ -1,0 +1,36 @@
+.blob_container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    top: 0;
+    background: #e6dbd1; 
+}
+
+.blob_one {
+    right: -150px;
+    top: -150px;
+}
+
+.blob_two {
+    right: -150px;
+    bottom: -150px;
+}
+
+.blob_three {
+    left: -200px;
+    top: 100px;
+}
+
+.blob_four {
+    left: 200px;
+    top: 100px;
+}
+
+.header {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
