@@ -8,6 +8,7 @@
   width: 100%;
   margin: 15vh auto 0 auto;
   padding: 15vh 0;
+  text-align: center;
 }
 
 .h1 {
@@ -42,16 +43,26 @@
   font-size: 1.25rem;
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
+  padding: 5px;
 }
 
 .a:hover {
   background: #75632b;
   color:white;
-} 
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
+}
+
+.li {
+  animation: fade-in 3s;
+}
 
 .wrench {
-  animation-name: fade-in;
-  animation-duration: 3s;
+  animation: fade-in 3s;
   text-align: center;
 }
 
@@ -81,13 +92,28 @@
 }
 
 
+.poem_container {
+  margin: 20vh 0 0 20vw;
+  background: #75632b;
+  padding: 5vh 10vw;
+  animation: fade-in 2s;
+}
+
+.poem_p {
+  font-family: 'Lora', serif;
+  margin: .5em;
+  opacity: 0;
+  transition: opacity 1s;
+  color: white;
+}
+
 /**
  * Animations
 **/
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translate(0, 10px);
+    transform: translate(0, 15px);
     ;
   }
 

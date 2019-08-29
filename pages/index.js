@@ -1,4 +1,3 @@
-import Wrench from "../components/wrench";
 import Page from "../components/page";
 import style from "./index.css";
 import Link from 'next/link';
@@ -14,10 +13,13 @@ function Home() {
           &middot; C &middot;
           <br className={style.rwd_break} />O R S O
         </h1>
-        <h2 className={style.h2}>SITE UNDER CONSTRUCTION</h2>
-        <div className={style.wrench}>
-          <Wrench />
-        </div>
+        <br />
+        <ul className={style.ul}>
+          <li className={style.li}>
+            <Link href="/untitled-poem"><a className={style.a}>Untitled poem</a></Link>
+          </li>
+
+        </ul>
       </div>
     </Page>
   );

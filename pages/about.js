@@ -15,7 +15,7 @@ function About() {
       <div className={style.container}>
         <div className={style.div_split_l}>
           <picture>
-            <img onLoad={handleOnLoad} className={`${style.profile} ${loaded ? undefined : style.opacity_0}`} src="/static/1.png" />
+            <img onLoad={handleOnLoad} className={`${style.profile} ${loaded ? undefined : style.opacity_0}`} src="/static/images/1.png" />
           </picture>
         </div>
         <div className={style.div_split_r}>
