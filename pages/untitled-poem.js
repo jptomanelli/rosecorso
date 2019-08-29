@@ -22,6 +22,7 @@ function UntitledPoem() {
 
   return (
     <Page includeBlobs={false} links={links}>
+      <div className={style.absolute_box}></div>
       <div className={style.poem_container}>
         <p className={style.poem_p} style={textFadeIn[0] ? { opacity: 1 } : undefined}>All alone I stood and</p>
         <p className={style.poem_p} style={textFadeIn[1] ? { opacity: 1 } : undefined}>The moss swallowed whole my feet&mdash;</p>

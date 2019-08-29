@@ -97,6 +97,16 @@
   background: #75632b;
   padding: 5vh 10vw;
   animation: fade-in 2s;
+  position: relative;
+}
+
+.absolute_box {
+  animation: fade-in 2s;
+  position: absolute;
+  background: #daab8d;
+  width: 60vw;
+  height: 60vh;
+  top: 0
 }
 
 .poem_p {
