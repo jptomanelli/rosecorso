@@ -1,3 +1,7 @@
+:root {
+  --mainColor: #75632b;
+}
+
 .container {
   margin-top: 25px;
 }
@@ -36,20 +40,52 @@
   font-size: 1rem;
 }
 
-.a {
-  margin: 5px;
+.a_head {
   font-family: 'Lora', serif;
   letter-spacing: 5px;
   font-size: 1.25rem;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  padding: 5px;
+  padding: 0.25em;
+  background:
+    linear-gradient(to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%);
+  background-position: 0 0%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.a_head:hover {
+  color: white;
+  background-size: 4px 50px;
+}
+
+.a {
+  font-family: 'Lora', serif;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 0.35em;
+  background:
+    linear-gradient(to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: all .2s;
 }
 
 .a:hover {
-  background: #75632b;
-  color:white;
+  color: white;
+  background-size: 4px 50px;
 }
 
 .ul {
@@ -61,9 +97,11 @@
   animation: fade-in 3s;
 }
 
-.wrench {
-  animation: fade-in 3s;
-  text-align: center;
+.icons {
+  width: 15%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .avoid_wrap {

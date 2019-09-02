@@ -2,22 +2,28 @@ import { useState, useEffect } from 'react';
 import Page from "../components/page";
 import Link from 'next/link';
 import Utils from '../utils';
-
 import style from "./index.css";
 
 function UntitledPoem() {
 
   const [textFadeIn, setTextFadeIn] = useState(new Array(13).fill(false));
-  const links = <Link href='/'><a className={style.a}>R&middot;C</a></Link>;
+  const links = <Link href='/'><a className={style.a_head}>R&middot;C</a></Link>;
 
   useEffect(() => {
-    const func = async () => {
+    const poemFadeIn = async () => {
       for (const i in textFadeIn) {
         setTextFadeIn(textFadeIn.map((_, ind) => +i >= ind ? true : false));
         await Utils.wait(500 + Math.random() * 1000);
       }
     };
-    func();
+
+    if (window.sessionStorage.getItem(location.href)) {
+      setTextFadeIn(new Array(13).fill(true));
+    } else {
+      window.sessionStorage.setItem(location.href, true);
+      poemFadeIn();
+    }
+
   }, [Utils]);
 
   return (

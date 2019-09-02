@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import Page from '../components/page';
+import TwitterIcon from '../components/twitterIcon';
+import InstaIcon from '../components/instaIcon';
+import EmailIcon from '../components/emailIcon';
 import style from "./index.css";
 import Link from 'next/link';
 
@@ -9,7 +12,7 @@ function About() {
   const [loaded, setLoaded] = useState(false);
   const handleOnLoad = () => setLoaded(true);
   
-  const links = <Link href='/'><a className={style.a}>R&middot;C</a></Link>;
+  const links = <Link href='/'><a className={style.a_head}>R&middot;C</a></Link>;
 
   useEffect(() => {
     if (img.current.complete) {
@@ -37,6 +40,11 @@ function About() {
           </h1>
         </div>
       </div>
+      {/* <div className={style.icons}>
+        <TwitterIcon/>
+        <InstaIcon />
+        <EmailIcon />
+      </div> */}
     </Page>
   );
 }

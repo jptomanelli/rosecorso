@@ -3,15 +3,14 @@ import style from "./index.css";
 import Link from 'next/link';
 
 function Home() {
-  const links = <Link href='/about'><a className={style.a}>About</a></Link>;
+  const links = <Link href='/about'><a className={style.a_head}>About</a></Link>;
   return (
     <Page includeBlobs={true} links={links}>
       <div className={style.text_container}>
         <h1 className={style.h1}>
           R O S E
-          <br className={style.rwd_break} />
-          &middot; C &middot;
-          <br className={style.rwd_break} />O R S O
+          <br className={style.rwd_break} /> &middot; C &middot; <br className={style.rwd_break} />
+          O R S O
         </h1>
         <br />
         <ul className={style.ul}>
