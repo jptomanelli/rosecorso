@@ -25,7 +25,7 @@ function About() {
       <div className={style.container}>
         <div className={style.div_split_l}>
           <picture>
-            <img ref={img} onLoad={handleOnLoad} className={`${style.profile} ${loaded ? '': style.opacity_0}`} src="/static/images/7.png" />
+            <img ref={img} onLoad={handleOnLoad} className={`${style.profile} ${loaded ? '': style.opacity_0}`} src="/static/images/rc.jpg" />
           </picture>
         </div>
         <div className={style.div_split_r}>
@@ -40,11 +40,6 @@ function About() {
           </h1>
         </div>
       </div>
-      {/* <div className={style.icons}>
-        <TwitterIcon/>
-        <InstaIcon />
-        <EmailIcon />
-      </div> */}
     </Page>
   );
 }
