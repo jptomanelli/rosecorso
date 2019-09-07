@@ -5,7 +5,7 @@ import Link from 'next/link';
 function Home() {
   const links = <Link href='/about'><a className={style.a_head}>About</a></Link>;
   return (
-    <Page includeBlobs={true} links={links}>
+    <Page includeBlobs={true} animate={true} links={links}>
       <div className={style.text_container}>
         <h1 className={style.h1}>
           R O S E
