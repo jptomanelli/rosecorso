@@ -21,7 +21,7 @@ function About() {
   }, []);
 
   return (
-    <Page links={links}>
+    <Page links={links} animate={true} blob={true}>
       <div className={style.container}>
         <div className={style.div_split_l}>
           <picture>
@@ -29,7 +29,7 @@ function About() {
           </picture>
         </div>
         <div className={style.div_split_r}>
-          <h1 className={`${style.h1_about} ${loaded ? '' : style.opacity_0}`}>
+          <p className={`${style.p_about} ${loaded ? '' : style.opacity_0}`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -37,7 +37,7 @@ function About() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </h1>
+          </p>
         </div>
       </div>
     </Page>

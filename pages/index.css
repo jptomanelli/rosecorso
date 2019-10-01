@@ -1,5 +1,15 @@
 :root {
-  --mainColor: #75632b;
+  --mainColor: black;
+}
+
+@font-face {
+  font-family: s;
+  src: url("/static/fonts/s.woff2");
+}
+
+@font-face {
+  font-family: f;
+  src: url("/static/fonts/f.woff2");
 }
 
 .container {
@@ -11,37 +21,43 @@
   margin-top: 30vh;
   width: 100%;
   margin: 15vh auto 0 auto;
-  padding: 15vh 0;
   text-align: center;
 }
 
 .h1 {
-  font-family: 'Lora', serif;
+  font-family: 's', serif;
   text-align: center;
-  letter-spacing: 5px;
+  font-weight: 100;
+  line-height: 22vw;
   animation-name: fade-in;
   animation-duration: 2s;
+  font-size: 15vw;
+  letter-spacing: -0.1em;
 }
 
-.h1_about {
-  font-family: 'Lora', serif;
+.p_about {
+  font-family: 's', serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 900;
   animation-name: fade-in;
   animation-duration: 2s;
+  font-size: 2em;
 }
+
 
 .h2 {
-  font-family: 'Lora', serif;
-  text-align: center;
-  letter-spacing: 5px;
+  font-family: 's', serif;
   animation-name: fade-in;
   animation-duration: 2s;
-  font-size: 1rem;
+  font-weight: 100;
+  font-size: 5vw;
+  letter-spacing: 0.1em;
+  width: fit-content;
+  margin: 0 0 0 10vw;
 }
 
 .a_head {
-  font-family: 'Lora', serif;
+  font-family: 's', serif;
   letter-spacing: 5px;
   font-size: 1.25rem;
   text-decoration: none;
@@ -57,6 +73,7 @@
   color: #000;
   text-decoration: none;
   transition: all .2s;
+  font-size: 2em;
 }
 
 .a_head:hover {
@@ -65,13 +82,12 @@
 }
 
 .a {
-  font-family: 'Lora', serif;
+  font-family: 's', serif;
   letter-spacing: 5px;
-  font-size: 1.25rem;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  padding: 0.35em;
+  padding: 0.20em;
   background:
     linear-gradient(to bottom, var(--mainColor) 0%,
       var(--mainColor) 100%);
@@ -81,6 +97,7 @@
   color: #000;
   text-decoration: none;
   transition: all .2s;
+  font-size: 2em;
 }
 
 .a:hover {
@@ -91,10 +108,17 @@
 .ul {
   list-style: none;
   padding: 0;
+  text-align: center;
+  padding-bottom: 10vh;
 }
 
 .li {
+  display: inline-block; 
   animation: fade-in 3s;
+}
+
+.ul .li .a {
+  display: block;
 }
 
 .icons {
@@ -129,13 +153,21 @@
   opacity: 0;
 }
 
-
 .poem_container {
   margin: 20vh 0 0 20vw;
   background: #75632b;
   padding: 5vh 10vw;
   animation: fade-in 2s;
   position: relative;
+}
+
+.poem_container_alt {
+  margin: 20vh 0 0 20vw;
+  padding: 5vh 10vw;
+  animation: fade-in 2s;
+  font-weight: 900;
+  position: relative;
+  font-size: 1.2em;
 }
 
 .absolute_box {
@@ -147,13 +179,45 @@
   top: 0
 }
 
+.absolute_box_two {
+  animation: fade-in 2s;
+  position: absolute;
+  background: #d99838;
+  width: 60vw;
+  height: 60vh;
+  top: 80vh;
+  right: 0;
+}
+
+.absolute_box_three {
+  animation: fade-in 2s;
+  position: absolute;
+  background: black;
+  width: 20vw;
+  height: 20vw;
+  top: 150vh;
+}
+
 .poem_p {
-  font-family: 'Lora', serif;
+  font-family: 'f', serif;
   margin: .5em;
+  letter-spacing: 0.55px;
   opacity: 0;
   transition: opacity 1s;
   color: white;
 }
+
+.poem_p_alt {
+  font-family: 's', serif;
+  text-transform: uppercase;
+  margin: .5em;
+  letter-spacing: 0.55px;
+  opacity: 0;
+  transition: opacity 1s;
+  color: black;
+  font-size: 0.9em;
+}
+
 
 /**
  * Animations
@@ -179,6 +243,7 @@
   .rwd_break {
     display: none;
   }
+ 
 }
 
 @media (min-width: 600px) {
@@ -201,7 +266,12 @@
   .div_split_r {
     width: 74%
   }
-
+  .ul {
+    float: right;
+    width: fit-content;
+    text-align: none;
+    margin: 0 10vw 0 0;
+  }
 }
 
 @media (min-width: 900px) {
@@ -212,4 +282,5 @@
   .div_split_r {
     width: 54%
   }
+
 }
