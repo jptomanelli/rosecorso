@@ -8,7 +8,7 @@ function Home() {
     <Page includeBlobs={true} animate={true} links={links}>
       <div className={style.text_container}>
         <h1 className={style.h1}>
-           R O S E <br className={style.rwd_break} /> C O R S O
+           R O S E C O R S O
         </h1>
         <br />
         {/* <h2 className={style.h2}>POEMS</h2> */}

@@ -171,18 +171,18 @@
 }
 
 .absolute_box {
-  animation: fade-in 2s;
   position: absolute;
   background: #daab8d;
   width: 60vw;
   height: 60vh;
+  overflow: hidden;
   top: 0
 }
 
 .absolute_box_two {
-  animation: fade-in 2s;
   position: absolute;
   background: #d99838;
+  overflow: hidden;
   width: 60vw;
   height: 60vh;
   top: 80vh;
@@ -190,9 +190,9 @@
 }
 
 .absolute_box_three {
-  animation: fade-in 2s;
   position: absolute;
   background: black;
+  overflow: hidden;
   width: 20vw;
   height: 20vw;
   top: 150vh;
@@ -203,6 +203,7 @@
   margin: .5em;
   letter-spacing: 0.55px;
   opacity: 0;
+  font-size: 1.2em;
   transition: opacity 1s;
   color: white;
 }
