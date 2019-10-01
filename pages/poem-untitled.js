@@ -1,7 +1,5 @@
-import { useState, useEffect } from 'react';
 import Page from "../components/page";
 import Link from 'next/link';
-import Utils from '../utils';
 import style from "./index.css";
 
 function PoemUntitled() {

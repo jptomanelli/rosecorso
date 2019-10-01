@@ -1,7 +1,5 @@
-import { useState, useEffect } from 'react';
 import Page from "../components/page";
 import Link from 'next/link';
-import Utils from '../utils';
 import style from "./index.css";
 
 function PoemTransition() {
@@ -13,7 +11,7 @@ function PoemTransition() {
        <div className={style.absolute_box} style={{ height: '60vw', background: '#75632b', borderRadius: '50%' }}></div>
        <div className={style.absolute_box_two}></div>
        <div className={style.absolute_box_three}></div>
-      <div className={style.poem_container_alt} style={{ background: '#fff', padding: 15, width: 'fit-content', margin: '20vh auto' }}>
+      <div className={style.poem_container_alt} style={{ background: 'rgb(255, 255, 255, 0.85)', padding: 15, width: 'fit-content', margin: '20vh auto' }}>
         <p className={style.poem_p_alt} style={{ opacity: 1 }} >After the knife</p>
         <br />
         <p className={style.poem_p_alt} style={{ opacity: 1 }} >Moving of muscle</p>
