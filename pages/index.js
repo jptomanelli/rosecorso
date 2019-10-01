@@ -11,7 +11,7 @@ function Home() {
            R O S E C O R S O
         </h1>
         <br />
-        {/* <h2 className={style.h2}>POEMS</h2> */}
+        <h2 className={style.h2}>POEMS</h2>
         <ul className={style.ul}>
           <li className={style.li}>
             <Link href="/poem-untitled"><a className={`${style.a} ${style.list_item}`}>Untitled</a></Link>

@@ -31,7 +31,7 @@
   line-height: 22vw;
   animation-name: fade-in;
   animation-duration: 2s;
-  font-size: 15vw;
+  font-size: 10vw;
   letter-spacing: -0.1em;
 }
 
@@ -51,9 +51,10 @@
   animation-duration: 2s;
   font-weight: 100;
   font-size: 5vw;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
   width: fit-content;
-  margin: 0 0 0 10vw;
+  margin: 0 auto;
+  font-size: 2.1em;
 }
 
 .a_head {
@@ -73,7 +74,7 @@
   color: #000;
   text-decoration: none;
   transition: all .2s;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 .a_head:hover {
@@ -88,16 +89,18 @@
   color: black;
   text-transform: uppercase;
   padding: 0.20em;
-  background:
-    linear-gradient(to bottom, var(--mainColor) 0%,
-      var(--mainColor) 100%);
+  background: linear-gradient(
+    to bottom, 
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 4px;
   color: #000;
   text-decoration: none;
   transition: all .2s;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 .a:hover {
@@ -267,6 +270,11 @@
   .div_split_r {
     width: 74%
   }
+
+  .h2 {
+    margin: 0 0 0 10vw;
+  }
+
   .ul {
     float: right;
     width: fit-content;
@@ -283,5 +291,4 @@
   .div_split_r {
     width: 54%
   }
-
 }
