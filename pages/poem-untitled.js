@@ -17,7 +17,7 @@ function PoemUntitled() {
         <p className={style.poem_p} style={{ opacity: 1 }}>&emsp;&emsp;Disappearing.</p>
         <br />
         <p className={style.poem_p} style={{ opacity: 1 }}>I know you are weak and</p>
-        <p className={style.poem_p} style={{ opacity: 1 }}>I weight a ton</p>
+        <p className={style.poem_p} style={{ opacity: 1 }}>I weigh a ton</p>
         <br />
         <p className={style.poem_p} style={{ opacity: 1 }}>I would invite you</p>
         <p className={style.poem_p} style={{ opacity: 1 }}>I said,</p>
